@@ -4,8 +4,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
-import 'custom_auth_button.dart';
-import 'custom_text_formfield.dart';
+import '../custom_auth_button.dart';
+import '../custom_text_formfield.dart';
 
 class CustomLoginForm extends StatefulWidget {
   const CustomLoginForm({super.key});

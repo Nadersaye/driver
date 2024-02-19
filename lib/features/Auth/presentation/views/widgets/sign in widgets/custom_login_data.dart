@@ -2,8 +2,8 @@ import 'package:driver/core/utils/app_colors.dart';
 import 'package:driver/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'custom_do_not_have_account_row.dart';
-import 'custom_google_sign_in_button.dart';
+import '../custom_another_option_row.dart';
+import '../custom_google_sign_in_button.dart';
 import 'custom_login_form.dart';
 
 class CustomLoginData extends StatelessWidget {
