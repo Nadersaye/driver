@@ -7,11 +7,13 @@ class SignInViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
-      children: [
-        CustomLoginImage(),
-        Expanded(child: CustomLoginData()),
-      ],
+    return const SingleChildScrollView(
+      child: Column(
+        children: [
+          CustomLoginImage(),
+          CustomLoginData(),
+        ],
+      ),
     );
   }
 }
