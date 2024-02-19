@@ -2,7 +2,6 @@ import 'package:driver/core/utils/app_colors.dart';
 import 'package:driver/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-
 import 'custom_do_not_have_account_row.dart';
 import 'custom_google_sign_in_button.dart';
 import 'custom_login_form.dart';
@@ -38,15 +37,18 @@ class CustomLoginData extends StatelessWidget {
                 color: AppColors.primaryColor,
               ),
             ),
-            const Spacer(),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 11),
-              child: CustomLoginForm(),
-            ),
+            const SizedBox(height: 54),
+            const CustomLoginForm(),
             const Gap(26),
-            const CustomGoogleSignInButton(),
+            CustomGoogleSignInButton(
+              buttonText: 'Sign in With Google',
+              onPressed: () {},
+            ),
             const Gap(19),
-            const CustomDonotHaveAccountRow(),
+            const CustomAnotherOptionRow(
+              messageText: 'don’t have an account? ',
+              actionText: 'Sign up',
+            ),
           ],
         ));
   }
