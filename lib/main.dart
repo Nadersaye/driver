@@ -1,3 +1,4 @@
+import 'package:driver/core/utils/app_routes.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,6 +10,9 @@ class DriverApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp.router(
+      routerConfig: AppRoutes.router,
+      debugShowCheckedModeBanner: false,
+    );
   }
 }
