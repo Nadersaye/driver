@@ -1,4 +1,5 @@
 import 'package:driver/core/utils/app_colors.dart';
+import 'package:driver/core/utils/app_routes.dart';
 import 'package:driver/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -45,9 +46,12 @@ class CustomLoginData extends StatelessWidget {
               onPressed: () {},
             ),
             const Gap(19),
-            const CustomAnotherOptionRow(
+            CustomAnotherOptionRow(
               messageText: 'don’t have an account? ',
               actionText: 'Sign up',
+              onTap: () {
+                AppRoutes.router.push(AppRoutes.signUpView);
+              },
             ),
           ],
         ));
