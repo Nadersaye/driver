@@ -1,7 +1,7 @@
 import 'package:driver/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../core/utils/app_colors.dart';
+import '../utils/app_colors.dart';
 
 class CustomAuthTextformfield extends StatelessWidget {
   const CustomAuthTextformfield(
